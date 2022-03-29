@@ -8,21 +8,15 @@
     <style>
         a{
             font-size:3rem;
-            /* inline display에서는 transform이 동작하지 않는다 */
             display:inline-block;
             
             transition-property: all;
-            /* 장면전환이 설정값만큼 일어난다 */
             transition-duration: 0.5s;
-
-            /* transition: all 0.5s; 단축형*/
-
+            
             /* duration은 동작 과정이고 delay는 시작 전이다 */
             transition-delay: 0.5s;
-
         }
         a:active{
-            /* x, y축 */
             transform: translate(20px, 20px);
             font-size: 2rem;
         }
