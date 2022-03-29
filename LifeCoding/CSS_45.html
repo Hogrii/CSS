@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 시간 딜레이 */
+        img{
+            transition: all 1s;
+        }
+        img:hover{
+            /* -webkit-은 chrome에서 사용할 때 적어주어야한다. */
+            -webkit-filter:grayscale(100%) blur(3px);
+        }
+        h1{
+            -webkit-filter: blur(3px);
+        }
+    </style>
+</head>
+<body>
+    <!-- <a href="https://bennettfeely.com/filters/">filter playground</a> -->
+
+    <h1>Ebichu</h1>
+    <img src="에비츄.png" alt="">
+</body>
+</html>
