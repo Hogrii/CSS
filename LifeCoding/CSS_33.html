@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            padding-top: 30px;
+        }
+        #parent, #other{
+            border:5px solid tomato;
+        }
+        #large{
+            height:10000px;
+            background-color: tomato;
+        }
+        #me{
+            background-color: black;
+            color: white;
+            /* 스크롤과 무관하게 해당 위치에 고정 시킨다. */
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 30px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+    <div id="large">large</div>
+</body>
+</html>
