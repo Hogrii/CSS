@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #type1{
+            font-size:5rem;
+            /* arial이 있으면 arial, 없으면 verdana, verdana도 없으면 Helvetica Neue가 출력된다. 폰트 이름에 띄어쓰기가 있으면 "" 묶어준다 */
+            /* 장식이 없/있는 폰트 : Sans-serif / Serif
+               고정폭이 있는 폰트 : monospace */
+            font-family:arial, verdana, "Helvetica Neue", serif;
+            /* 글씨 굵기 */
+            font-weight: bold;
+            /* 폰트 사이즈의 준 값(px)만큼 라인이 띄어진다. px을 주지 않고 숫자만 쓰면 글자크기의 배수만큼 띄어진다 */
+            line-height: 2;
+        }
+        #type2{
+            /* type1을 한번에 표기 */
+            font: bold 5rem/2 arial, verdana, "Helvetica Neue", serif;
+        }
+    </style>
+</head>
+<body>
+    <p id="type1">
+        Hello world<br>
+        Hello world
+    </p>
+    <p id="type2">
+        Hello world
+    </p>
+
+</body>
+</html>
