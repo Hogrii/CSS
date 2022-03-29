@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 링크가 파란색->검정색이 된다 */
+        a:link{
+            color:black;
+        }
+        /* 방문한 곳은 보라색->빨간색이 된다 */
+        a:visited{
+            color:red;
+        }
+        a:active{
+            color:green;
+        }
+        /* css는 동급명령이면 뒤에 있는 명령을 수행 */
+        a:hover{
+            color:yellow;
+        }
+        /* 선택이 되어있을 때 배경을 검정 색을 하얀색으로 변경 */
+        a:focus{
+            color:white;
+        }        
+        input:focus{
+            background-color:black;
+            color:white;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://opentutorials.org">방문함</a>
+    <a href="https://a.a">방문안함</a>
+    <input type="text">
+</body>
+</html>
