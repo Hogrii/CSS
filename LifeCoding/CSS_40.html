@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 모바일 화면에서 보고 싶을 때 추가한다 : F12에서 toggle device toolbar 사용 -->
+    <meta name="viewport" content="width=device-width, initial-scsale=1.0">
+    <style>
+        /* 화면의 크기가 500px이 되었을때 body의 background-color를 red로 설정 */
+        /* max-width는 값보다 작을 때, min-width는 값보다 클 때 */
+        
+        @media (max-width:600px){
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    ~500px : red
+    501~600px : green
+    601px~ : blue
+    
+</body>
+</html>
