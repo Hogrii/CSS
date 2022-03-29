@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        li{color:red;}
+        h1{color:red;}
+        */
+        /* html 글씨 전체를 상속을 통해 빨간색으로 바꿔주고 생성자를 통해 javascript만 검정색으로 만들어준다 */
+        html{color:red;}
+        #select{color:black;}
+        /* body 밑에 ul은 왜 border가 적용이 되지 않았을까? -> 상속이 되었을때 유리하고 유리하지 않은 것을 알아서 판단한다 */
+        body{border:1px solid red;}
+    </style>
+</head>
+<body>
+    <h1>수업내용</h1>
+    <ul>
+        <li>html</li>
+        <li>css</li>
+        <li id="select">javascript</li>
+    </ul>
+
+    <a href="https://opentutorials.org/module/2367/13406">상속 받는 속성과 상속 받지 않는 속성</a>
+    <a href="https://www.w3.org/TR/CSS21/propidx.html">Inherited? -> yes 상속!</a>
+</body>
+</html>
