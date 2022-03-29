@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #empty{
+            margin-top: 50px;
+            margin-bottom: 100px;
+            border:1px solid tomato;
+        }
+        #normal{
+            background-color:powderblue;
+            /* 
+                empty의 100px이기 때문에 마진 겹침 때문에 100px을 주어도 변화가 없다.
+                변화를 주기 위해서는 100px보다 큰 값을 넣어주어야 한다.
+             */
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+</body>
+</html>
