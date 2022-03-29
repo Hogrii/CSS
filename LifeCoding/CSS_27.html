@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            /* 
+                border-box : border 크기만큼 설정한다
+                모든 엘리먼트에 대해(*) border의 크기를 설정한다.
+             */
+            box-sizing: border-box;
+        }
+        div{
+            margin:10px;
+            width:150px;            
+        }
+        #small{
+            border:10px solid black;
+        }
+        #large{
+            border:30px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!--두 엘리먼트의 크기가 다르게 보인다.-->
+    <div id="small">Hello</div>
+    <div id="large">Hello</div>
+</body>
+</html>
