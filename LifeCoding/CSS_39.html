@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .column{
+            /* column-count : 컬럼을 n개로 나눈다 */
+            column-count: 2;
+            text-align: justify;
+
+            /* 각 column을 200px로 유지하고 200px 이상이 되면 분화된다 */
+            column-width: 200px;
+            /* 
+                count > width
+                만약 count와 width를 함께 사용하면 width를 넘어가지 않으면서 count를 유지하려고 노력한다
+             */
+
+             /* 각 column 사이의 거리 */
+             column-gap: 30px;
+             /* solid : 선, dotted : 점선, dashed : 절취선 */
+             column-rule-style: dotted;
+             column-rule-width: 5px;
+             column-rule-color: red;
+        }
+
+        h1{
+            column-span: all;
+        }
+    </style>
+</head>
+<body>
+    <div class="column">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci aspernatur placeat, omnis, vitae quaerat nisi officia nobis tenetur iste quod dolore rerum quisquam molestiae molestias sint asperiores ipsa illum! A fuga, praesentium illum modi voluptas nostrum, <h1>Hello world</h1>ducimus beatae expedita temporibus, at ea quae consequuntur sapiente eos soluta reprehenderit architecto obcaecati facilis nisi earum ab voluptate officiis? Dolorum officiis delectus voluptatibus rerum cum et nemo atque, accusamus cumque molestias magnam vitae sapiente perspiciatis sunt earum voluptas quas dignissimos pariatur eligendi. Illum expedita adipisci obcaecati esse ea, dolorem consequatur aliquid eaque provident sit nam consectetur minus soluta temporibus accusamus, eum, a blanditiis.
+    </div>
+</body>
+</html>
